@@ -37,7 +37,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "kevin.cornellius-footballnews.pbp.cs.ui.ac.id",
+    "kevin-cornellius-footballnews.pbp.cs.ui.ac.id",
 ]
 
 
