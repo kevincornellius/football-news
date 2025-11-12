@@ -2,9 +2,11 @@ from django.urls import path
 from main.views import (
     add_news_entry_ajax,
     create_news,
+    create_news_flutter,
     delete_news,
     login_user,
     logout_user,
+    proxy_image,
     register,
     show_json,
     show_json_by_id,
@@ -31,4 +33,6 @@ urlpatterns = [
     path("news/<uuid:id>/edit", edit_news, name="edit_news"),
     path("news/<uuid:id>/delete", delete_news, name="delete_news"),
     path("create-news-ajax", add_news_entry_ajax, name="add_news_entry_ajax"),
+    path("proxy-image/", proxy_image, name="proxy_image"),
+    path("create-flutter/", create_news_flutter, name="create_news_flutter"),
 ]
